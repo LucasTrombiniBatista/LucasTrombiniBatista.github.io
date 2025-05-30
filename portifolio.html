@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="shortcut icon" type="imagex/jpeg" href="icone.jpeg">
+    <title>LucasTrombiniBatista</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#inicio">Lucas Trombini Batista dos Santos</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre Mim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projetos">Projetos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#parceiros">Parceiros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="avatar"> <img src="icone.jpeg" alt="Lucas Trombini" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;"> </div>
+                <h1>Lucas Trombini Batista dos Santos</h1>
+                <p class="lead">Desenvolvedor De Software</p>
+                <a href="#sobre" class="btn-custom">Conheça meu trabalho</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre" class="about">
+        <div class="container">
+            <h2 class="section-title fade-in">Sobre Mim</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-6 fade-in">
+                    <h3>Olá! Eu sou Lucas Trombini </h3>
+                    <p class="lead">Sou estudante de Análise e Desenvolvimento de Sistemas, com foco em Dados e 
+                                Inteligência Artificial. Atualmente, participo de projetos práticos para ampliar minha experiência, 
+incluindo: </p>
+                    <p>Com mais de 3 anos de experiência em desenvolvimento web, especializo-me em transformar ideias criativas em soluções digitais funcionais. Tenho paixão por tecnologia, design e sempre busco aprender novas ferramentas e técnicas.</p>
+                    <p>Quando não estou codificando, gosto de estudar novas tendências em UX/UI, jogar videogames e praticar fotografia.</p>
+                </div>
+                <div class="col-lg-6 fade-in">
+                    <h4>Habilidades Técnicas</h4>
+                    <div class="skills-container">
+                        <span class="skill-badge"><i class="fab fa-html5"></i> HTML5</span>
+                        <span class="skill-badge"><i class="fab fa-css3-alt"></i> CSS3</span>
+                        <span class="skill-badge"><i class="fab fa-js"></i> JavaScript</span>
+                        <span class="skill-badge"><i class="fab fa-react"></i> React</span>
+                        <span class="skill-badge"><i class="fab fa-bootstrap"></i> Bootstrap</span>
+                        <span class="skill-badge"><i class="fab fa-node-js"></i> Node.js</span>
+                        <span class="skill-badge"><i class="fas fa-database"></i> MySQL</span>
+                        <span class="skill-badge"><i class="fas fa-database"></i> SQL</span>
+                        <span class="skill-badge"><i class="fab fa-python"></i> Python</span>
+                        <span class="skill-badge"><i class="fab fa-php"></i> PHP</span>
+                        <span class="skill-badge"><i class="fab fa-vuejs"></i> Vue.js</span>
+                        <span class="skill-badge"><i class="fab fa-git-alt"></i> Git</span>
+                        <span class="skill-badge"><i class="fas fa-mobile-alt"></i> Design Responsivo</span>
+                        <span class="skill-badge"><i class="fas fa-palette"></i> UI/UX Design</span>
+                        <span class="skill-badge"><i class="fa-brands fa-docker"></i> Docker</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projetos" class="projects">
+        <div class="container">
+            <h2 class="section-title fade-in">Meus Projetos</h2>
+            <div class="row">
+                <div class="col-lg-6 mb-4 fade-in">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">WebServer</h3>
+                            <p class="project-description">
+                                • WebServer com Consulta de CNPJ/CEP e Autenticação: Projeto em andamento que inclui: 
+                                <p class="project-description-form">o Utilização de uma API RESTful com Node.js para consulta de CNPJ e CEP.</p> 
+                                <p class="project-description-form">o Interface dinâmica construída com React para login/cadastro e exibição de dados.</p> 
+                                <p class="project-description-form">o Banco de dados em MySQL e conteinerização com Docker para deploy escalável.</p>
+                            </p>
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i> Ver Código</a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Ver Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4 fade-in">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Dashboard de Dados</h3>
+                            <p class="project-description">
+                                • Intranet e Dashboard de Dados: Projetei e implementei uma solução web integrada para 
+visualização de dados utilizando Python, PHP, SQL, HTML, CSS e JavaScript, otimizando a 
+análise de indicadores empresariais. </p>
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i> Ver Código</a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Ver Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section id="parceiros" class="partners">
+        <div class="container">
+            <h2 class="section-title fade-in">Parceiros & Colaborações</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4 fade-in">
+                    <div class="partner-card">
+                        <div class="partner-logo">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <h4>Universidade Anhanguera</h4>
+                        <p>Instituição de ensino onde desenvolvo projetos acadêmicos e participo de grupos de pesquisa em tecnologia.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 fade-in">
+                    <div class="partner-card">
+                        <div class="partner-logo">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h4>DevTeam Collective</h4>
+                        <p>Grupo de desenvolvedores onde colaboro em projetos open source e compartilho conhecimentos.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 fade-in">
+                    <div class="partner-card">
+                        <div class="partner-logo">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <h4>Prof. Gilberto Falco</h4>
+                        <p>Mentor e professor especialista que me orienta no desenvolvimento de projetos e carreira profissional.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="contact">
+        <div class="container">
+            <h2 class="section-title fade-in">Entre em Contato</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 fade-in">
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="nome" class="form-label">Nome</label>
+                                    <input type="text" class="form-control" id="nome" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="email" class="form-label">E-mail</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="assunto" class="form-label">Assunto</label>
+                                <input type="text" class="form-control" id="assunto" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label">Mensagem</label>
+                                <textarea class="form-control" id="mensagem" rows="5" required></textarea>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-custom">
+                                    <i class="fas fa-paper-plane"></i> Enviar Mensagem
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/lucastrombinibatistadossantos/" class="social-link" title="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/LucasTrombiniBatista" class="social-link" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p>&copy; 2025 Lucas Trombini Batista dos Santos. Todos os direitos reservados.</p>
+                    <p>Desenvolvido com <i class="fas fa-heart text-danger"></i> usando HTML, CSS, JavaScript e Bootstrap</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="script.js"></script>
+</body>
+</html>
