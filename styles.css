@@ -20,6 +20,25 @@
         }
 
 
+        .btn-custom-w{
+            background: linear-gradient(45deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            color: rgb(255, 255, 255);
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .btn-custom-w:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            color: rgb(255, 255, 255);
+        }
+
         div.project-card.p{
             margin-bottom: 1.5rem;
             color: #ffffff;
@@ -178,6 +197,11 @@
             height: 4px;
             background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
             border-radius: 2px;
+        }
+
+
+        .section-title.fade-in-w{
+            color : var(--primary-color);
         }
 
         /* About Section */
@@ -359,6 +383,8 @@
             opacity: 1;
             transform: translateY(0);
         }
+
+
 
         /* Responsive */
         @media (max-width: 768px) {
