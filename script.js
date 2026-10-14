@@ -6,7 +6,8 @@
   const dataEl = document.getElementById("data-hoje");
   if (dataEl) {
     try {
-      const txt = new Intl.DateTimeFormat("pt-BR", {
+      const loc = document.documentElement.lang === "en" ? "en-US" : "pt-BR";
+      const txt = new Intl.DateTimeFormat(loc, {
         weekday: "long", day: "numeric", month: "long", year: "numeric",
       }).format(new Date());
       dataEl.textContent = txt;

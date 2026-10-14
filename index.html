@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Lucas Trombini — Portfólio</title>
   <meta name="description" content="Portfólio de Lucas Trombini, desenvolvedor de software em Jundiaí/SP. Automações, engenharia digital, DevOps e AWS.">
+  <link rel="alternate" hreflang="en" href="en/index.html">
+  <link rel="alternate" hreflang="pt-BR" href="index.html">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
@@ -13,12 +15,18 @@
 <body>
   <header class="header" id="topo">
     <a class="logo" href="#topo"><span class="accent">✷</span> ver. 2026</a>
-    <nav class="nav" aria-label="Principal">
-      <a href="#trabalhos">Trabalhos</a>
-      <a href="#experiencia">Experiência</a>
-      <a href="#stack">Stack</a>
-      <a href="#sobre">Sobre</a>
-    </nav>
+    <div class="header-right">
+      <nav class="nav" aria-label="Principal">
+        <a href="#trabalhos">Trabalhos</a>
+        <a href="#experiencia">Experiência</a>
+        <a href="#stack">Stack</a>
+        <a href="#sobre">Sobre</a>
+      </nav>
+      <div class="lang-switch" role="group" aria-label="Idioma / Language">
+        <span class="current" aria-current="true">PT</span>
+        <a href="en/index.html" hreflang="en" lang="en" title="Read in English">EN</a>
+      </div>
+    </div>
   </header>
 
   <main>
@@ -185,10 +193,13 @@
     <!-- SOBRE -->
     <section class="section about" id="sobre">
       <div class="letter reveal">
-        <span class="label accent">Uma breve carta da editora</span>
-        <p class="greeting">querido leitor,<br><em class="muted">(e, na verdade, quem passa por aqui)</em></p>
-        <p class="mono-body">este é o meu cantinho para mostrar o que construo: automações, ferramentas internas e plugins para a engenharia, sempre com documentação clara e dashboards que simplificam o dia a dia.<br><br>sigo estudando rumo a DevOps e arquitetura cloud na FIAP.</p>
-        <p class="signoff"><em>com carinho,<br>lucas</em></p>
+        <span class="label accent">(Como eu trabalho)</span>
+        <ol class="principles">
+          <li><span class="label accent num">01</span><div><h3>Proatividade e automação</h3><p>Sou proativo e gosto de trazer ideias novas para a operação, automatizando processos antigos para economizar tempo e esforço.</p></div></li>
+          <li><span class="label accent num">02</span><div><h3>Trabalho em equipe</h3><p>Ajudo o grupo no que for preciso e, quando é necessário organizar o time, assumo a responsabilidade pela operação.</p></div></li>
+          <li><span class="label accent num">03</span><div><h3>Inglês</h3><p>Nível intermediário. Tenho boa escuta ativa e me comunico de forma objetiva sobre o meu trabalho sempre que necessário.</p></div></li>
+          <li><span class="label accent num">04</span><div><h3>Sempre aprendendo</h3><p>Estou sempre estudando e gosto de mostrar o que estou fazendo no momento: DevOps na FIAP e, em paralelo, o aprofundamento do inglês, com mais conceitos e fundamentos a cada dia.</p></div></li>
+        </ol>
       </div>
       <div class="author reveal" style="--d:.12s">
         <span class="label accent">Sobre o autor</span>
@@ -204,9 +215,10 @@
 
   <footer class="footer">
     <div class="footer-top">
-      <div class="footer-cta reveal">
-        <span class="label accent">✷ Você está aqui</span>
-        <p class="cta">Vamos <em class="accent">plantar</em><br>algo?</p>
+      <div class="footer-id reveal">
+        <span class="label muted">Lucas Trombini</span>
+        <p class="footer-role">Desenvolvedor de software</p>
+        <p class="footer-info">Jundiaí, SP — Brasil<br>Engenharia Digital · DevOps · AWS</p>
       </div>
       <div class="footer-cols reveal" style="--d:.1s">
         <div><span class="label muted">Navegação</span><a href="#trabalhos">Trabalhos</a><a href="#experiencia">Experiência</a><a href="#stack">Stack</a><a href="#sobre">Sobre</a></div>
