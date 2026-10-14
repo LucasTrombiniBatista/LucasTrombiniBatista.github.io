@@ -47,7 +47,22 @@ em { font-family: var(--serif); font-style: italic; }
 .logo, .nav a { font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; }
 .logo .accent { font-size: 16px; margin-right: 6px; display: inline-block; transition: transform .6s; }
 .logo:hover .accent { transform: rotate(180deg); }
+.header-right { display: flex; align-items: center; gap: 32px; }
 .nav { display: flex; gap: 36px; }
+
+/* Botão de idioma em pílula */
+.lang-switch {
+  display: inline-flex; padding: 3px; gap: 2px;
+  border: 1px solid var(--line-strong); border-radius: 999px;
+  font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
+}
+.lang-switch a, .lang-switch span {
+  min-width: 40px; padding: 6px 12px; border-radius: 999px; text-align: center;
+  transition: background .25s, color .25s;
+}
+.lang-switch a { color: var(--muted); }
+.lang-switch a:hover { color: var(--paper); background: rgba(255, 255, 255, 0.1); }
+.lang-switch .current { background: var(--paper); color: var(--bg); font-weight: 600; }
 .nav a { position: relative; padding: 4px 0; }
 .nav a::after {
   content: ""; position: absolute; left: 0; bottom: 0; height: 1px; width: 100%;
@@ -56,7 +71,7 @@ em { font-family: var(--serif); font-style: italic; }
 .nav a:hover::after, .nav a.active::after { transform: scaleX(1); }
 
 /* ===== Hero ===== */
-.hero { padding: 40px var(--gutter) 120px; display: flex; flex-direction: column; gap: 40px; }
+.hero { padding: 40px var(--gutter) 120px; display: flex; flex-direction: column; gap: 48px; }
 .masthead {
   display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap;
   padding: 12px 0; border-top: 3px solid var(--paper); border-bottom: 1px solid var(--line);
@@ -65,7 +80,7 @@ em { font-family: var(--serif); font-style: italic; }
 .hero-title-row { display: flex; justify-content: space-between; align-items: flex-end; gap: 32px; flex-wrap: wrap; }
 .hero-title {
   font-family: var(--serif); font-weight: 400;
-  font-size: clamp(96px, 17.2vw, 248px); line-height: 0.95; letter-spacing: -0.04em; padding-bottom: 8px;
+  font-size: clamp(96px, 17.2vw, 248px); line-height: 0.95; letter-spacing: -0.04em; padding-bottom: 20px;
 }
 .title-aside { display: flex; flex-direction: column; gap: 10px; width: 300px; padding-bottom: 12px; }
 .aside-name { font-family: var(--serif); font-style: italic; font-size: 40px; line-height: 44px; }
@@ -172,11 +187,13 @@ em { font-family: var(--serif); font-style: italic; }
 
 /* About */
 .about { display: flex; gap: 56px; padding-bottom: 140px; }
-.letter { display: flex; flex-direction: column; gap: 32px; width: 520px; flex-shrink: 0; }
-.greeting { font-family: var(--serif); font-size: 36px; line-height: 44px; }
-.greeting em { font-size: 28px; line-height: 36px; }
-.mono-body { font-size: 15px; line-height: 26px; }
-.signoff { font-family: var(--serif); font-style: italic; font-size: 28px; line-height: 34px; }
+.letter { display: flex; flex-direction: column; gap: 28px; width: 520px; flex-shrink: 0; }
+.principles li { display: flex; gap: 20px; padding: 20px 0; border-top: 1px solid var(--line); transition: padding-left .3s; }
+.principles li:last-child { border-bottom: 1px solid var(--line); }
+.principles li:hover { padding-left: 8px; }
+.principles .num { width: 32px; flex-shrink: 0; padding-top: 8px; }
+.principles h3 { font-family: var(--serif); font-weight: 400; font-size: 30px; line-height: 34px; letter-spacing: -0.01em; margin-bottom: 8px; }
+.principles p { font-size: 14px; line-height: 22px; }
 .author { display: flex; flex-direction: column; gap: 40px; flex: 1; padding-left: 56px; border-left: 1px solid var(--line); }
 .author-lead { font-family: var(--serif); font-size: 52px; line-height: 58px; letter-spacing: -0.01em; max-width: 696px; }
 .author-meta { display: flex; gap: 40px; flex-wrap: wrap; }
@@ -187,8 +204,10 @@ em { font-family: var(--serif); font-style: italic; }
 /* Footer */
 .footer { background: var(--bg-deep); padding: 72px var(--gutter) 40px; display: flex; flex-direction: column; gap: 80px; }
 .footer-top { display: flex; justify-content: space-between; gap: 48px; flex-wrap: wrap; }
-.footer-cta { display: flex; flex-direction: column; gap: 16px; }
-.cta { font-family: var(--serif); font-size: 56px; line-height: 56px; letter-spacing: -0.02em; }
+.footer-id { display: flex; flex-direction: column; gap: 14px; width: 360px; max-width: 100%; }
+.footer-id .label { font-size: 11px; }
+.footer-role { font-family: var(--serif); font-size: 32px; line-height: 36px; letter-spacing: -0.01em; }
+.footer-info { font-size: 13px; line-height: 20px; }
 .footer-cols { display: flex; gap: 72px; flex-wrap: wrap; }
 .footer-cols > div { display: flex; flex-direction: column; gap: 14px; min-width: 160px; font-size: 13px; line-height: 20px; }
 .footer-cols .label { font-size: 11px; }
@@ -239,8 +258,11 @@ em { font-family: var(--serif); font-style: italic; }
 @media (max-width: 700px) {
   :root { --gutter: 20px; }
   .header { padding: 18px var(--gutter); }
-  .nav { gap: 16px; }
-  .nav a { font-size: 10px; letter-spacing: 0.1em; }
+  .header-right { width: 100%; justify-content: space-between; gap: 12px; }
+  .nav { gap: 12px; }
+  .nav a { font-size: 10px; letter-spacing: 0.08em; }
+  .lang-switch { font-size: 10px; }
+  .lang-switch a, .lang-switch span { min-width: 32px; padding: 5px 8px; }
   .logo { display: none; }
   .hero { padding-bottom: 80px; }
   .masthead span:nth-child(2) { display: none; }
@@ -260,6 +282,5 @@ em { font-family: var(--serif); font-style: italic; }
   .entry-title { font-size: 30px; line-height: 34px; }
   .stack-grid { grid-template-columns: 1fr; }
   .author-lead { font-size: 32px; line-height: 38px; }
-  .cta { font-size: 44px; line-height: 46px; }
   .footer-cols { gap: 40px; }
 }
