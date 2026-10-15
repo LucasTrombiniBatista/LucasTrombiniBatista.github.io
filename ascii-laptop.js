@@ -1,11 +1,11 @@
 (() => {
   /* ===== Ajustes ===== */
-  const TILT_DEG   = 35;    // inclinação (graus)
+  const TILT_DEG   = 25;    // inclinação (graus)
   const TILT_AXIS  = 'z';   // 'x' = vista de cima a 45°, girando como um prato | 'z' = eixo de giro deitado a 45°
   const SPIN_SPEED = 0.9;   // radianos por segundo
   const COLS = 124, ROWS = 64;
   const RAMP = " .,:;-~=+*#%@";
-  const CAM  = 8.5;         // distância da câmera
+  const CAM  = 6.5;         // distância da câmera
 
   /* ===== Modelo: pontos sobre as superfícies ===== */
   // cada ponto: [x, y, z, nx, ny, nz, material]  (material 0..1 = brilho próprio da textura)
