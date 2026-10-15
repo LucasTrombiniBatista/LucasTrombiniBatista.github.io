@@ -115,7 +115,8 @@ em { font-family: var(--serif); font-style: italic; }
   overflow: visible;
 }
 .photo-top { display: flex; justify-content: space-between; }
-.photo-hint { align-self: flex-start; }
+.ascii-stage { position: absolute; inset: 64px 16px 150px; display: grid; place-items: center; }
+#ascii-laptop { margin: 0; font-family: var(--mono, ui-monospace, Menlo, Consolas, monospace); line-height: 1; white-space: pre; color: var(--paper); user-select: none; -webkit-user-select: none; }
 
 .ticker-card {
   position: absolute; left: -96px; bottom: 72px; width: 560px; max-width: calc(100% + 96px);
@@ -269,7 +270,8 @@ em { font-family: var(--serif); font-style: italic; }
   .title-aside { width: 100%; }
   .lead { font-size: 30px; line-height: 38px; }
   .social-grid { grid-template-columns: 1fr; }
-  .hero-photo { min-height: 420px; }
+  .hero-photo { min-height: 540px; }
+  .ascii-stage { inset: 56px 8px 190px; }
   .serif-line { font-size: 32px; line-height: 38px; }
   .section { padding-top: 80px; }
   .section + .section { padding-top: 90px; }
