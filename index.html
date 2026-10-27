@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; connect-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'none'">
   <title>Lucas Trombini — Portfólio</title>
   <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
   <meta name="description" content="Portfólio de Lucas Trombini, desenvolvedor de software em Jundiaí/SP. Automações, engenharia digital, DevOps e AWS.">
@@ -189,6 +190,29 @@
           <ul><li>AWS EC2</li><li>Docker</li><li>Bancos de dados na nuvem</li><li class="studying"><em>Infra como código (estudando)</em></li></ul>
         </div>
       </div>
+    </section>
+
+    <!-- GITHUB -->
+    <section class="section gh" id="github" data-src="data/github.json" hidden>
+      <div class="section-head reveal">
+        <h2 class="section-title">Atividade no <em class="accent">GitHub</em></h2>
+        <span class="label muted" data-gh="meta"></span>
+      </div>
+      <div class="gh-hero reveal">
+        <span class="gh-total accent" data-gh="total"></span>
+        <span class="gh-total-label muted">contribuições nos últimos 12 meses</span>
+      </div>
+      <dl class="gh-stats reveal">
+        <div><dd data-gh="active"></dd><dt class="label muted">dias com contribuição</dt></div>
+        <div><dd data-gh="current"></dd><dt class="label muted">dias seguidos agora</dt></div>
+        <div><dd data-gh="longest"></dd><dt class="label muted">maior sequência (dias)</dt></div>
+        <div><dd data-gh="best"></dd><dt class="label muted">no melhor dia · <span data-gh="best-date"></span></dt></div>
+      </dl>
+      <div class="gh-scroll reveal">
+        <div class="gh-months"></div>
+        <div class="gh-grid" role="img" aria-label="Mapa de contribuições dos últimos 12 meses"></div>
+      </div>
+      <p class="label muted gh-note">(Dados do meu perfil, atualizados diariamente)</p>
     </section>
 
     <!-- SOBRE -->
