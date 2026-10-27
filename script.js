@@ -60,7 +60,7 @@
   }
 
   // Atividade no GitHub (lê só o JSON estático gerado pela Action)
-  const gh = document.getElementById("gh-activity");
+  const gh = document.getElementById("github");
   if (gh && window.fetch) {
     const en = root.lang === "en";
     const loc = en ? "en-US" : "pt-BR";
