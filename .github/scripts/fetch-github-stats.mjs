@@ -1,6 +1,6 @@
 // Busca o calendário de contribuições via GraphQL e grava apenas dados públicos em data/github.json.
 // Roda só dentro da GitHub Action: o token nunca chega ao navegador.
-import { writeFileSync } from "node:fs";
+import { mkdirSync, writeFileSync } from "node:fs";
 
 const token = process.env.GH_STATS_TOKEN;
 const login = process.env.GH_LOGIN;
@@ -41,5 +41,6 @@ const out = {
   total: cal.totalContributions,
   days,
 };
+mkdirSync("data", { recursive: true });
 writeFileSync("data/github.json", JSON.stringify(out) + "\n");
 console.log(`OK: ${days.length} dias, ${out.total} contribuições`);
